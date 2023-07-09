@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>To-do List</h1>
+
+    <div class="container">
+      <div class="form-container">
+        <input type="text" id="taskInput" placeholder="Add Task" />
+        <button class="add-task" onclick="addTask()">Add</button>
+        <div class="counters">
+          <div class="counter">Total: <span id="totalCounter">0</span></div>
+          <div class="counter1">
+            Completed: <span id="completedCounter">0</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Task</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="taskTable"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="./assets/js/todo.js"></script>
+  </body>
+</html>
